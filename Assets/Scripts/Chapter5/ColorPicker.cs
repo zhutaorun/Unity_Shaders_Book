@@ -38,15 +38,12 @@ public class ColorPicker : MonoBehaviour {
 	}
 
 	// Draw the color we picked
-	public static void GUIDrawRect( Rect position, Color color )
-	{
-		if( m_staticRectTexture == null )
-		{
+	public static void GUIDrawRect( Rect position, Color color ){
+		if( m_staticRectTexture == null ){
 			m_staticRectTexture = new Texture2D(1, 1);
 		}
 		
-		if( m_staticRectStyle == null )
-		{
+		if( m_staticRectStyle == null )	{
 			m_staticRectStyle = new GUIStyle();
 		}
 		
